@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/is5003-atlas/static/css/main.b100e6da.chunk.css",
+    "main.js": "/is5003-atlas/static/js/main.4063c0c5.chunk.js",
+    "main.js.map": "/is5003-atlas/static/js/main.4063c0c5.chunk.js.map",
+    "runtime-main.js": "/is5003-atlas/static/js/runtime-main.1d9ab4dd.js",
+    "runtime-main.js.map": "/is5003-atlas/static/js/runtime-main.1d9ab4dd.js.map",
+    "static/js/2.8b6a4258.chunk.js": "/is5003-atlas/static/js/2.8b6a4258.chunk.js",
+    "static/js/2.8b6a4258.chunk.js.map": "/is5003-atlas/static/js/2.8b6a4258.chunk.js.map",
+    "index.html": "/is5003-atlas/index.html",
+    "precache-manifest.b53785541bcb8228a65e63e977506743.js": "/is5003-atlas/precache-manifest.b53785541bcb8228a65e63e977506743.js",
+    "service-worker.js": "/is5003-atlas/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/is5003-atlas/static/css/main.b100e6da.chunk.css.map",
+    "static/media/platform_revolution.jpg": "/is5003-atlas/static/media/platform_revolution.4af51259.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d9ab4dd.js",
+    "static/js/2.8b6a4258.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.4063c0c5.chunk.js"
+  ]
+}
