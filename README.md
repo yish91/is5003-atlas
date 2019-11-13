@@ -103,7 +103,7 @@ Please take note that you need an AWS account for this. We will be using `S3` an
 
 Change the 
 
-### Location 
+### `Location`
 
 in the GET handler response header to point to your new custom frontend. 
 This is in `Line 124` of `main.py` in `backend.zip`.
