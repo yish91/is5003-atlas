@@ -55,6 +55,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 # Platform Revolution Review - Backend Deployment
 
+## To modify the Lambda function
+
+If you extract `backend.zip`, you will find the various dependencies in the zip file.
+
+The main lambda handler is in `main.py`. 
+
+To modify the function, edit the lambda handler function in `main.py`, and rezip it into `backend.zip` to redeploy it.
+
 ## Deploying it step by step
 
 Please take note that you need an AWS account for this. We will be using `S3` and `Lambda`.
