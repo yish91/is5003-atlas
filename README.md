@@ -23,7 +23,7 @@ Next [follow the steps here to build your own github page](https://help.github.c
 ## Change backend source
 Change the 
 
-###`axios post` 
+### `axios post` 
 
 to point to your new custom backend. This is in `Line 122` in `HorizontalLinealStepper.js`.
 
@@ -73,7 +73,7 @@ If you extract `backend.zip`, you will find the various dependencies in the zip 
 
 The main lambda handler is in 
 
-###`main.py`
+### `main.py`
 
 To modify the function, edit the lambda handler function in `main.py`, and rezip it into `backend.zip` to redeploy it.
 
@@ -103,7 +103,7 @@ Please take note that you need an AWS account for this. We will be using `S3` an
 
 Change the 
 
-###Location 
+### Location 
 
 in the GET handler response header to point to your new custom frontend. 
 This is in `Line 124` of `main.py` in `backend.zip`.
