@@ -1,6 +1,21 @@
+# Platform Revolution Review - Frontend Deployment Steps
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## To Ignore
+
+Ignore `backend.zip`. This is for the backend deployment.
+
+## Serving static pages
+
+Run `yarn build` to build the static files.
+
+Next [follow the steps here to build your own github page](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site)
+
+## Change backend source
+Change the `axios post`. `Line 122` in `HorizontalLinealStepper.js`
+
+## Available Scripts to run locally
 
 In the project directory, you can run:
 
@@ -37,32 +52,33 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Platform Revolution Review - Backend Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deploying it step by step
 
-### Code Splitting
+Please take note that you need an AWS account for this. We will be using `S3` and `Lambda`.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+[We also have a video here](https://youtu.be/KKiJEgm78cI)
 
-### Analyzing the Bundle Size
+<ol>
+<li>Extract out backend.zip</li>
+<li>Log into AWS</li>
+<li>Create bucket in S3</li>
+<li>Upload backend.zip into S3 bucket</li>
+<li>Create a new Lambda</li>
+<li>Choose Python 3.7 for Lambda</li>
+<li>Choose upload file using S3</li>
+<li>Copy and paste the link gotten from uploading backend.zip</li>
+<li>Change handler to: main.lambda_handler. This is because our file is called main.py</li>
+<li>Add environment variable - Key: NLTK_DATA Value: ./nltk_data</li>
+<li>Go to basic settings and set timeout to 1min 30 seconds</li>
+<li>Add API Gateway</li>
+<li>Save</li>
+</ol>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Redirect GET to frontend
 
-### Making a Progressive Web App
+Change the redirect in the GET handler to `Line 124` of `main.py` in `backend.zip`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Rezip the `backend.zip` and follow the deployment steps
