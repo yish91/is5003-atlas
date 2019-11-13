@@ -85,7 +85,7 @@ Please take note that you need an AWS account for this. We will be using `S3` an
 <li>Save</li>
 </ol>
 
-## Redirect GET to frontend
+## Change frontend source
 
 Change the redirect in the GET handler to point to your new custom frontend. This is in `Line 124` of `main.py` in `backend.zip`.
 
