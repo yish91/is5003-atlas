@@ -1,4 +1,4 @@
-# Platform Revolution Review - Frontend Deployment Steps
+# Platform Revolution Review - Frontend Deployment
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
