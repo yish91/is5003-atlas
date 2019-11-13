@@ -13,7 +13,7 @@ Run `yarn build` to build the static files.
 Next [follow the steps here to build your own github page](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site)
 
 ## Change backend source
-Change the `axios post`. `Line 122` in `HorizontalLinealStepper.js`
+Change the `axios post` to point to your new custom backend. This is in `Line 122` in `HorizontalLinealStepper.js`.
 
 ## Available Scripts to run locally
 
@@ -79,6 +79,6 @@ Please take note that you need an AWS account for this. We will be using `S3` an
 
 ## Redirect GET to frontend
 
-Change the redirect in the GET handler to `Line 124` of `main.py` in `backend.zip`
+Change the redirect in the GET handler to point to your new custom frontend. This is in `Line 124` of `main.py` in `backend.zip`.
 
-Rezip the `backend.zip` and follow the deployment steps
+Rezip `main.py` back into `backend.zip` and reupload and save the lambda.
