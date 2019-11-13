@@ -1,16 +1,16 @@
 # Platform Revolution Review - Frontend Deployment
 
-For backend deployment, please scroll down.
+**For backend deployment, please scroll down.**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## To Ignore
 
-Ignore 
+**Ignore**
 
 ### `backend.zip` 
 
-This is for the backend deployment.
+**This is for the backend deployment.**
 
 ## Serving static pages
 
@@ -27,7 +27,9 @@ Change the
 
 ### `axios post` 
 
-to point to your new custom backend. This is in `Line 122` in `HorizontalLinealStepper.js`.
+to point to your new custom backend. 
+
+This is in `Line 122` in `HorizontalLinealStepper.js`.
 
 ## Available Scripts to run locally
 
@@ -77,7 +79,7 @@ The main lambda handler is in
 
 ### `main.py`
 
-To modify the function, edit the lambda handler function in `main.py`, and rezip it into `backend.zip` to redeploy it.
+**To modify the function, edit the lambda handler function in `main.py`, and rezip it into `backend.zip` to redeploy it.**
 
 ## Deploying it step by step
 
@@ -107,8 +109,8 @@ Change the
 
 ### `Location`
 
-in the GET handler response header to point to your new custom frontend. 
+in the **GET handler response header** to point to your new custom frontend. 
 
 This is in `Line 124` of `main.py` in `backend.zip`.
 
-Rezip `main.py` back into `backend.zip` and reupload and save the lambda.
+**Rezip `main.py` back into `backend.zip` and reupload and save the lambda.**
