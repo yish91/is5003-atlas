@@ -106,6 +106,7 @@ Change the
 ### `Location`
 
 in the GET handler response header to point to your new custom frontend. 
+
 This is in `Line 124` of `main.py` in `backend.zip`.
 
 Rezip `main.py` back into `backend.zip` and reupload and save the lambda.
