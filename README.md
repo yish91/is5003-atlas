@@ -4,16 +4,28 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To Ignore
 
-Ignore `backend.zip`. This is for the backend deployment.
+Ignore 
+
+### `backend.zip` 
+
+This is for the backend deployment.
 
 ## Serving static pages
 
-Run `yarn build` to build the static files.
+Run 
+
+### `yarn build` 
+
+to build the static files.
 
 Next [follow the steps here to build your own github page](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site)
 
 ## Change backend source
-Change the `axios post` to point to your new custom backend. This is in `Line 122` in `HorizontalLinealStepper.js`.
+Change the 
+
+###`axios post` 
+
+to point to your new custom backend. This is in `Line 122` in `HorizontalLinealStepper.js`.
 
 ## Available Scripts to run locally
 
@@ -59,7 +71,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 If you extract `backend.zip`, you will find the various dependencies in the zip file.
 
-The main lambda handler is in `main.py`. 
+The main lambda handler is in 
+
+###`main.py`
 
 To modify the function, edit the lambda handler function in `main.py`, and rezip it into `backend.zip` to redeploy it.
 
@@ -87,6 +101,11 @@ Please take note that you need an AWS account for this. We will be using `S3` an
 
 ## Change frontend source
 
-Change the redirect in the GET handler to point to your new custom frontend. This is in `Line 124` of `main.py` in `backend.zip`.
+Change the 
+
+###Location 
+
+in the GET handler response header to point to your new custom frontend. 
+This is in `Line 124` of `main.py` in `backend.zip`.
 
 Rezip `main.py` back into `backend.zip` and reupload and save the lambda.
