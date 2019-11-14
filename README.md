@@ -88,6 +88,12 @@ The main lambda handler is in
 
 ### `main.py`
 
+The python file currently depends on file imports found in the `platform-revolution-summary` dependencies folder for text summarization.
+You can feel free to add your own dependencies folder in `backend.zip` or use the `bs4` or the `wikipedia` library to scrape various online sources.
+
+For textual analysis, you can use the `summa` dependency to summarise texts. You can use the `sklearn` dependency to generate similarity scores.
+Please look at the current implementation to better understand how to modify the python script.
+
 To modify the function, edit the **lambda handler function in `main.py`**, and rezip it into `backend.zip` to redeploy it.
 
 ## Deploying it step by step
